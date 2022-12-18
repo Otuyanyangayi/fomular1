@@ -5,12 +5,14 @@ import f3 from '../assets/f3.jpeg';
 import d1 from '../assets/british.png';
 import d2 from '../assets/german.png';
 import d3 from '../assets/fin.jpg';
+import flg from '../assets/ger.png';
 import './style.css';
 
 export default function Home() {
 
   return (
     <div>
+
       <div className="float-container">
         <div className="float-child" style={{
           backgroundImage: `url(${background})`, backgroundRepeat: "no-repeat"
@@ -28,7 +30,7 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="float-child">
+        <div className="float-child1">
           <h3 className="">Top Stories</h3>
 
           <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -98,14 +100,18 @@ export default function Home() {
         </div>
       </div>
       <div className="parent">
-        <div className="child">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div className="child" style={{backgroundImage: `url(${f2})`,backgroundRepeat: "no-repeat"
+          , backgroundSize: "cover", color: "white"}}>
+      <div style={{
+          backgroundImage: `url(${f2})`, backgroundRepeat: "no-repeat"
+          , backgroundSize: "cover", color: "white"
+        }}>
         <div class="coli">
           <div class="card">
             <img src={f2} class="card-img-top" alt="..." />
             <div class="card-body">
 
-              <p class="card-text"><a href="https://www.autosport.com/formula-e/news/ex-f1-racer-jarno-trulli-steps-down-from-racing-in-formula-e-5002232/5002232/">Ex-F1 racer Jarno Trulli steps down from racing in Formula E.</a></p>
+              <p class="card-text"><a href="https://www.autosport.com/formula-e/news/ex-f1-racer-jarno-trulli-steps-down-from-racing-in-formula-e-5002232/5002232/"></a></p>
               <h6 class="card-title">Formula 1</h6>
             </div>
           </div>
@@ -115,13 +121,17 @@ export default function Home() {
             <img src={f3} class="card-img-top" alt="..." />
             <div class="card-body">
 
-              <p class="card-text"><a href="https://au.motorsport.com/f1/news/rosberg-f1-tyre-blowouts-need-to-be-sorted-before-monza/2946480/">Nico Rosberg demands actions over Pirelli F1 type blowouts for Monza .</a></p>
+              <p class="card-text"><a href="https://au.motorsport.com/f1/news/rosberg-f1-tyre-blowouts-need-to-be-sorted-before-monza/2946480/">.</a></p>
               <h6 class="card-title">Formula 1</h6>
             </div>
           </div>
         </div>
 
       </div>
+    </div>
+    <div className="child" style={{backgroundImage: `url(${f3})`, backgroundRepeat: "no-repeat"
+          , backgroundSize: "cover", color: "white"}}>
+
     </div>
     <div className="child">
     <h3 className="">WC Standings</h3>
@@ -150,6 +160,36 @@ export default function Home() {
     <td><img className="d" src={d3} class="card-img-top" alt="..." /></td>
     <td>Kimi Raikkinen <br></br><span>Ferrari</span></td>
     <td>76</td>
+  </tr>
+</table>
+    </div>
+    <div className="child">
+    <h3 className="">Team Standings</h3>
+    <table>
+  <tr>
+    <td><img className="d" src={flg} class="card-img-top" alt="..." /></td>
+    <td><span>Mercedes GP</span></td>
+    <td>383</td>
+  </tr>
+  <tr>
+    <td><img className="d" src={d2} class="card-img-top" alt="..." /></td>
+    <td><span>Ferrari</span></td>
+    <td>181</td>
+  </tr>
+  <tr>
+    <td><img className="d" src={d2} class="card-img-top" alt="..." /></td>
+    <td><span>Williams</span></td>
+    <td>160</td>
+  </tr>
+  <tr>
+    <td><img className="d" src={d3} class="card-img-top" alt="..." /></td>
+    <td><span>Red Bull Racing</span></td>
+    <td>96</td>
+  </tr>
+  <tr>
+    <td><img className="d" src={d3} class="card-img-top" alt="..." /></td>
+    <td><span>Force India</span></td>
+    <td>39</td>
   </tr>
 </table>
     </div>

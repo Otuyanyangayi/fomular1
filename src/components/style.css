@@ -17,6 +17,12 @@
     padding: 20px;
     border: 1px solid rgb(59, 57, 57);
 }
+.float-child1 {
+    width: 70vw;
+    float: left;
+    padding: 20px;
+    border: 1px solid rgb(59, 57, 57);
+}
 .we{
     float: right;
 }
@@ -36,6 +42,7 @@ h3{
   width: 60%; /* adjust as needed */
   padding: 20px;
  justify-content: space-around;
+ float: left;
 }
 .d{
     width: 50px;
