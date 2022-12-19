@@ -25,8 +25,8 @@ export default function Home() {
             <h2 className="home-h2">Audi torn on Engine <br></br> Deal for Red Bull <br></br> Racing</h2>
 
             <p>Toto Wolff has admitted supplying Red Bull with <br></br> engines
-              could be "an attractive option" for Mecedes. It <br></br>
-              is a significan't change...</p>
+              could be "an attractive option" for Mercedes. It <br></br>
+              is a significant change...</p>
           </div>
 
         </div>
